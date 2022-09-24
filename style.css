@@ -3,6 +3,17 @@ html, body {
     padding: 0;
 }
 
+.header-pic {
+    width: 400px;
+    height: auto;
+}
+
+.header,
+.footer {
+    flex: 0 0 1;
+    border: solid black 1px;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -10,8 +21,63 @@ html, body {
     color: white;
 }
 
+.header-left,
+.header-right {
+    flex: 1;
+    border: 1px solid white;
+}
+
+.title {
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+}
+
+.half-title {
+    flex: 1;
+}
+
+.title,
+.upper-body,
+.mid-body,
+.lower-body {
+    flex-basis: 0 0 2;
+    border: 1px solid black;
+}
+
 .mid-body {
     background: lightgray;
+}
+
+.lower-body {
+    justify-content: center;
+    background-color: #3b82f6;
+}
+
+.lower-button {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+
+.footer {
+
+}
+
+.footer-phrase {
+    color: white;
+}
+
+.quote {
+    color: #71797E;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.signature {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
 }
 
 a {
@@ -22,7 +88,7 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto','Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
