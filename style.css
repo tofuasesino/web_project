@@ -35,7 +35,10 @@ html, body {
 }
 
 .half-title {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
 }
 
 .title,
@@ -53,6 +56,7 @@ html, body {
 }
 .mid-body {
     display: flex;
+    flex-direction: column;
     background: lightgray;
 }
 
@@ -81,7 +85,7 @@ html, body {
 }
 
 .image {
-    max-width: 20%;
+    max-width: 10%;
     height: auto;
     margin: 10px;
     border-radius: 5px;
