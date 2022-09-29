@@ -42,13 +42,14 @@ html, body {
 .upper-body,
 .mid-body,
 .lower-body {
-    flex: 1;
+    flex: 1 0 0;
     justify-content: center;
     align-items: center;
 }
 
 .upper-body {
     display: flex;
+    flex-direction: column;
 }
 .mid-body {
     display: flex;
@@ -71,6 +72,20 @@ html, body {
     border-radius: 5px;
     padding: 5px 12px;
     margin-left: 40px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    max-width: 20%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid #3b82f6;
 }
 
 .footer {
